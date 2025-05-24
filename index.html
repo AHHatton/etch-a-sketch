@@ -8,6 +8,7 @@
   <!-- alternate option to include JS in separate script <script src="javascript.js"></script> -->
 </head>
 <body>
+  <button class="numberBox">Click me</button>
 
     <div class="box-grid">
     
@@ -19,10 +20,14 @@
   <script>
 
     const boxGrid = document.querySelector(".box-grid"); 
+    let rowCount = 0; 
     
 
-
-    const rowCount = 16;  
+    const btn = document.querySelector(".numberBox");
+    btn.addEventListener("click", () => {
+      rowCount = prompt("Enter a number between 1-10", 0);
+      createRows(rowCount);
+    });
 
 
     function createRows(rowCount) {        
@@ -35,28 +40,14 @@
         for (let i = 0; i < rowCount; i++) {
           const column = document.createElement("div");
           column.classList.add("box-column");
+          column.classList.add("box");
           row.appendChild(column);
         }}
 ;}
-        
 
     
-
-    createRows(rowCount);
 
     const boxRow = document.querySelectorAll(".box-row"); 
-
- //   function fillRows() {
-     
- //     for (let i = 0; i < rowCount; i++) {
- //       const box = document.createElement("div");
- //       box.classList.add("smallBox");
- //       boxRow.appendChild(box);
- //     }; 
- //   }
-        
-    
- //   fillRows();
 
   </script>
 

@@ -4,25 +4,33 @@ body {
 }
 
 .box-grid {
-    height: 100%;
     display: flex;
-    
     flex-flow: column nowrap;
+    justify-content: space-around;
 }
 
 .box-row {
+
+    height: 100%;
+    width: 100%;
     display: flex;
-    
-    border: 1px solid purple;
-    
-    margin: 3px;
+    justify-content: space-around;
+    flex-grow: 1;
+    flex-basis: auto;
+    min-height: 10px;
 }
 
-.smallBox {
+.box-column {
     
-    background-color: blue;
     
-    flex: 0 1 auto;
-    margin: 10px;
+    background-color: blue;    
+    flex-grow: 1;
+    flex-basis: auto;
+    border: 1px dashed black;
+    min-width: 10px;
     
+}
+
+.box-column:hover{
+    background-color: purple;
 }
