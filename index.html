@@ -26,12 +26,10 @@
 
 
     function createRows(rowCount) {        
-      //for (let i = 0; i < rowCount; i++) {
+      for (let i = 0; i < rowCount; i++) {
         const row = document.createElement("div");    
         row.classList.add("box-row");
         boxGrid.appendChild(row);
-
-        //row.appendChild(column);
         
       
         for (let i = 0; i < rowCount; i++) {
@@ -39,7 +37,7 @@
           column.classList.add("box-column");
           row.appendChild(column);
         }}
-
+;}
         
 
     
