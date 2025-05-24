@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artsy Fartsy</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- alternate option to include JS in separate script <script src="javascript.js"></script> -->
+</head>
+<body>
+
+    <div class="box-grid">
+    
+    </div>
+
+
+
+
+  <script>
+
+    const boxGrid = document.querySelector(".box-grid"); 
+    
+
+
+    const rowCount = 16;  
+
+
+    function createRows(rowCount) {        
+      //for (let i = 0; i < rowCount; i++) {
+        const row = document.createElement("div");    
+        row.classList.add("box-row");
+        boxGrid.appendChild(row);
+
+        //row.appendChild(column);
+        
+      
+        for (let i = 0; i < rowCount; i++) {
+          const column = document.createElement("div");
+          column.classList.add("box-column");
+          row.appendChild(column);
+        }}
+
+        
+
+    
+
+    createRows(rowCount);
+
+    const boxRow = document.querySelectorAll(".box-row"); 
+
+ //   function fillRows() {
+     
+ //     for (let i = 0; i < rowCount; i++) {
+ //       const box = document.createElement("div");
+ //       box.classList.add("smallBox");
+ //       boxRow.appendChild(box);
+ //     }; 
+ //   }
+        
+    
+ //   fillRows();
+
+  </script>
+
+</body>
+</html>
+
+

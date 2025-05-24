@@ -1,0 +1,28 @@
+/**styles go here! I totally remember how to comment out css**/
+body {
+    background-color: green;
+}
+
+.box-grid {
+    height: 100%;
+    display: flex;
+    
+    flex-flow: column nowrap;
+}
+
+.box-row {
+    display: flex;
+    
+    border: 1px solid purple;
+    
+    margin: 3px;
+}
+
+.smallBox {
+    
+    background-color: blue;
+    
+    flex: 0 1 auto;
+    margin: 10px;
+    
+}
