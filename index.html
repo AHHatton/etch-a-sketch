@@ -23,13 +23,6 @@
     let rowCount = 0; 
     
 
-    const btn = document.querySelector(".numberBox");
-    btn.addEventListener("click", () => {
-      rowCount = prompt("Enter a number between 1-10", 0);
-      createRows(rowCount);
-    });
-
-
     function createRows(rowCount) {        
       for (let i = 0; i < rowCount; i++) {
         const row = document.createElement("div");    
@@ -46,8 +39,18 @@
 ;}
 
     
+const btn = document.querySelector(".numberBox");
+    btn.addEventListener("click", () => {
+      
+  document.querySelectorAll(".box-row").forEach((row) => row.remove()); 
+      
+//      boxGrid.parentNode.removeChild(boxGrid);
+     
+      rowCount = prompt("Enter a number between 1-10", 0); 
+      createRows(rowCount);
+    });
 
-    const boxRow = document.querySelectorAll(".box-row"); 
+    
 
   </script>
 
