@@ -47,7 +47,12 @@ const btn = document.querySelector(".numberBox");
 //      boxGrid.parentNode.removeChild(boxGrid);
      
       rowCount = prompt("Enter a number between 1-10", 0); 
-      createRows(rowCount);
+      if(rowCount > 0 && rowCount < 101) {
+        createRows(rowCount);
+      } else {
+        alert("Only numbers between 0-100 allowed")
+      };
+      
     });
 
     
