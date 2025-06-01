@@ -10,26 +10,25 @@ body {
 }
 
 .box-row {
-    
     display: flex;
     justify-content: space-around;
     flex-grow: 1;
     flex-basis: auto;
     
-    
 }
 
 .box-column {
     aspect-ratio: 1 / 1;
-    
     background-color: blue;    
     flex-grow: 1;
-    flex-basis: auto;
-    /**border: 1px dashed black;**/
-    
-    
+    flex-basis: auto;  
+    border: 1px solid black;  
 }
 
-.box-column:hover{
-    background-color: purple;
+.box-column:hover {
+    background-color: black;
+}
+
+.trail-color {
+    background-color: pink;
 }

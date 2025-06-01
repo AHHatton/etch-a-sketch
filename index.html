@@ -27,35 +27,34 @@
       for (let i = 0; i < rowCount; i++) {
         const row = document.createElement("div");    
         row.classList.add("box-row");
-        boxGrid.appendChild(row);
-        
-      
+        boxGrid.appendChild(row);      
+       
         for (let i = 0; i < rowCount; i++) {
           const column = document.createElement("div");
           column.classList.add("box-column");
           column.classList.add("box");
+          column.addEventListener('mouseover', function() {
+            column.classList.add("trail-color")}); //how to get the trailing color?
           row.appendChild(column);
         }}
 ;}
 
-    
+
+  
+
 const btn = document.querySelector(".numberBox");
-    btn.addEventListener("click", () => {
-      
-  document.querySelectorAll(".box-row").forEach((row) => row.remove()); 
-      
-//      boxGrid.parentNode.removeChild(boxGrid);
-     
-      rowCount = prompt("Enter a number between 1-10", 0); 
-      if(rowCount > 0 && rowCount < 101) {
+    btn.addEventListener("click", () => { 
+    document.querySelectorAll(".box-row")
+      .forEach((row) => row.remove()); 
+    rowCount = prompt("Enter a number between 1-100", 0); 
+      if(rowCount > 0 && rowCount < 99) {
         createRows(rowCount);
       } else {
         alert("Only numbers between 0-100 allowed")
       };
-      
     });
 
-    
+
 
   </script>
 
