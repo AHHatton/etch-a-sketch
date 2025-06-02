@@ -9,7 +9,8 @@
 </head>
 <body>
   <button class="numberBox">Click me</button>
-  <p>This is an etch-a-sketch game developed as part of The Odin Project's Foundations course. Click the above button and enter a number to generate a square grid with your selected number of rows/columns. Then draw!</p>
+  <p>This is an etch-a-sketch game developed as part of The Odin Project's Foundations course. Click the above 
+    button and enter a number to generate a square grid with your selected number of rows/columns. Then draw!</p>
 
     <div class="box-grid">
     
@@ -48,7 +49,7 @@ const btn = document.querySelector(".numberBox");
     document.querySelectorAll(".box-row")
       .forEach((row) => row.remove()); 
     rowCount = prompt("Enter a number between 1-100", 0); 
-      if(rowCount > 0 && rowCount < 99) {
+      if(rowCount > 0 && rowCount < 101) {
         createRows(rowCount);
       } else {
         alert("Only numbers between 0-100 allowed")
